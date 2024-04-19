@@ -26,7 +26,7 @@ aws_secret_key = Variable.get("aws_secret_key")
 
 step_adder = EmrAddStepsOperator(
     task_id='add_step',
-    job_flow_id='j-V4QHE8DH44DN', #EMR Cluster ID
+    job_flow_id='j-1RJX4YS8S2PQ3', #EMR Cluster ID
     aws_conn_id='aws_default',
     steps=[{
         'Name': 'Run PySpark Streaming Script',
